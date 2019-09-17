@@ -60,5 +60,11 @@ We can get to the same place by going to Help then pressing Keyboard Shortcuts H
 
 The tip I used was using Ctrl+I to tidy up my script and make it look tidier. This made it easier to work with.  
 Common mistakes include:  
-- argument missing or extra, or missing commas.
-- 
+- argument missing or extra, or missing commas.  
+- If variable used has no definition in scope.  
+- If variable is defined but not used.  
+
+
+### Chapter 8
+
+R has a powerful notation of the working directory. You can print this out in R code by running <<getwd()>>.
