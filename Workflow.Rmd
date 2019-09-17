@@ -1,0 +1,60 @@
+---
+title: "Workflow"
+output: html_notebook
+---
+
+### Chapter 4
+
+R can be used as a calculator to compute basic sums. 
+
+```{r}
+5+7 
+```
+
+We can create new objects by assigning a value or a function to a name.
+
+```{r}
+x <- c(1,10)
+y <- seq(1,10)
+```
+
+This object can then be called upon.
+
+```{r}
+x
+y
+```
+
+
+#####4.4 Practice
+
+1. Why does this code not work? 
+
+```{r}
+my_variable <- 10
+my_varıable
+```
+
+The my_varıable object is not found because it is not identical to my_variable which has been assigned a value.
+
+2. Tweaked versions of each of the R commands.
+
+```{r}
+library(tidyverse)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+
+filter(mpg, cyl == 8)
+filter(mpg, model == "corvette")
+```
+
+3.
+Pressing Alt+Shift+K shows all the Keyboard shortcuts that can be used to make using R easier.  
+We can get to the same place by going to Help then pressing Keyboard Shortcuts Help.
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
